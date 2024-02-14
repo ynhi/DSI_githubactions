@@ -31,9 +31,3 @@ def calc_area_rectangle(side1_length, side2_length):
     else:
         return side1_length * side2_length
 
-def calc_area_circle(radius):
-    if not isinstance(radius, (float, int)):
-        raise TypeError(f'radius is {radius} but should be a number')
-    if radius < 0:
-        raise ValueError(f'radius is {radius} but must be positive')
-    return math.pi * radius ** 2

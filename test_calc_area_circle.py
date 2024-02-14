@@ -26,7 +26,7 @@ def test_calc_area_circle_errors():
 ###########################################
 # more complicated test below:
 
-def test_calc_area_circle():
+def test_calc_area_circle2():
     from calc_area import calc_area_circle
 
     input_numbers = [0, 1, 4, 100]
@@ -68,12 +68,12 @@ def test_calc_area_rectangle():
     assert calc_area_rectangle(2, 1) == 2
     
     
-def test_calc_area_circle():
+def test_calc_area_circle3():
     from calc_area import calc_area_circle
 
     assert calc_area_circle(2) == approx(12.5663, abs=1e-3)
 
-def test_calc_area_circle_errors():
+def test_calc_area_circle_errors2():
     from calc_area import calc_area_circle
 
     with raises(ValueError):
